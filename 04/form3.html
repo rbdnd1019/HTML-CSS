@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="test.html" >
+        <p>default = <input name="value" autofocus></p>
+        <p>readonly = <input name="value2" readonly></p>
+        <p>disable = <input name="value3" disabled></p>
+        <p>url<input type="url" name="url" ></p>
+        약관동의 <input type="checkbox" required>
+        <hr>
+        <input type="file" multiple>
+        <hr>
+        <select NAME = "dept">
+            <optgroup label="공과대학">
+                <option value="101">건축공학과</option>
+                <option value="102">기계공학과</option>
+                <option value="103">산업공학과</option>
+                <option value="104">전기전자공학과</option>
+                <option value="105">컴퓨터공학과</option>
+                <option value="106">화학공학과</option>
+            </optgroup>
+            <optgroup label="인문대학">
+                <option>사학화</option>
+                <option>어문학부</option>
+                <option>철학</option>
+            </optgroup>
+        </select>
+        <hr>
+        <textarea name="content" style="width: 100%; height: 300px; resize: none;">
+        </textarea>
+        <button>전송</button>
+        <button formaction="" formmethod="get" formnovalidate 
+        formenctype="multipart/form-data">전송2</button>
+        <button style="font-size: 2em;">
+            <i class="fab fa-apple"></i>
+            전송하기
+        </button>
+    </form>
+</body>
+</html>

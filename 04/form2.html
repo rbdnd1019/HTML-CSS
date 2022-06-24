@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>color = <input type="color" name="color" value="#f22257" ></p>
+        <hr>
+        <p>date : <input type="date" name="date" min="2022-02-02" max="2022-02-15"></p>
+        <p>month : <input type="month" name="month"></p>
+        <p>week : <input type="week" name="week"></p>
+        <hr>
+        <p>time : <input type="time" name="time" value="14:00" autofocus></p>
+        <p>datetime : <input type="datetime" name="datetime"></p>
+        <p>datetime-local : <input type="datetime-local" name="datetimeLocal" id="datetimeLocal"></p>
+        <a href="https://www.naver.com" id = "btn1">네이버 이동</a>
+        <input type="button" value="click me" id="btn2">
+        <input type="file" name="file" accept="image/*">
+        <input placeholder="아이디를 입력하세요">
+        <button>전송!</button>
+    </form>
+    <script>
+        // var data = new Date();
+        // document.getElementById("time").value = date.getHours() + ":" + date.getMinutes();
+        document.getElementById("btn1").onclick = function() {
+            return confirm("네이버로 이동합니다.")
+        }
+        document.getElementById("btn2").onclick = function(){
+            alert("you click me!!");
+        }
+    </script>
+</body>
+</html>

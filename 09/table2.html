@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table {border: 1px solid; border-radius: 10px; border-collapse: collapse; width: 500px;}
+        th, td {border: 1px solid; padding: 10px; text-align: center; }
+        th {background: rgb(255, 249, 213);} */
+
+       
+        h2 {text-align: center;}
+        .board {border-collapse: collapse; width: 800px; margin: 0 auto; 
+            font-family: dotum; table-layout: fixed;}
+        .board th { border-top: 3px solid; border-bottom: 3px solid;
+        }
+        .board th,.board td {padding: 8px;}
+        .board td {border-bottom: 1px solid;}
+        
+        .board .col1,.board .col5 {width: 9%;}
+        .board .col3, .board .col4 {width: 15%;}
+        .board .col2 {width: 52%;}
+        /* selector 인접 태그 선택자 */
+        .board td,.board td + td + td {text-align: center;}
+        .board td + td {text-align: left; 
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;} /* 이렇게 3개가 한 묶음이라고 생각*/
+ 
+        .board a {text-decoration: none;}
+        .board a + a {font-size: .7em; color: black;}
+
+        .board tr + tr:hover {background: #ddd;}
+    </style>
+</head>
+<body>
+    <h2>게시판</h2>
+    <table class="board">
+        <tr>
+            <th class="col1">글번호</th>
+            <th class="col2">제목</th>
+            <th class="col3">작성일</th>
+            <th class="col4">작성자</th>
+            <th class="col5">조회수</th>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="#">게시글 제목게시글 제목게시글 제목게시글 제목게시글 제목게시글 제목게시글 제목게시글 제목게시글 제목게시글 제목게시글 제목</a><a href="#">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="#">게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목게시글제목</a><a href="#">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="#">ABCDEFGHIJKLMNOPOPQRSTUVWXYZABCDEFGHIJKLMNOPOPQRSTUVWXYZABCDEFGHIJKLMNOPOPQRSTUVWXYZABCDEFGHIJKLMNOPOPQRSTUVWXYZ</a><a href="#">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="#">게시글 제목</a><a href="#">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="#">게시글 제목</a><a href="#">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
